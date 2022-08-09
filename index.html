@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Kuripa</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <h1>
+        Hello, JS-Kirupa
+    </h1>
+    <button class="btn">Animation</button>
+    <div class="wrapper">
+        <div class="box"></div>
+    </div>
+    
+    <script>
+        
+        // let counter = 0;
+        // // alert(counter);
+        // function returnCount() {
+        // return counter;
+        // }
+        // alert(returnCount());
+        // for (let i = 0; i < 10; i++) {
+        // saySomething();
+        // }
+        // function saySomething() {
+        // document.writeln("hello!");
+        // }
+        // for (let i = 0; i < 100; i++) {
+        // document.writeln(i);
+        // if (i == 45) {
+        // break;
+        // }
+        // }
+        // let floors = 17;
+        // for (let i = 1; i <= floors; i++) {
+        // if (i == 13) {
+        // нет такого этажа (floor)
+        // continue;
+        // }
+        // document.writeln("At floor: " + i + "<br>");
+        // }
+        // const siteURL = "https://www.google.com";
+        // alert(siteURL);
+        function stopWatch() {
+            var startTime = Date.now();
+            function getDelay() {
+                var elapsedTime = Date.now() — startTime;
+                alert(elapsedTime);
+                }
+            return getDelay;
+        }
+        let timer = stopWatch();
+            // Сделать что-нибудь за некоторое время.
+            for (let i = 0; i < 1000000; i++) {
+                let foo = Math.random() * 10000;
+            }
+            // Вызвать возвращаемую функцию.
+        timer();
+    </script>
+    <script src="./src/script/script.js"></script>
+</body>
+</html>
