@@ -15,29 +15,52 @@
     <div class="wrapper">
         <div class="box"></div>
     </div>
+    
     <script>
-        for (let i = 0; i < 10; i++) {
-        saySomething();
-        }
-        function saySomething() {
-        document.writeln("hello!");
-        }
-        for (let i = 0; i < 100; i++) {
-        document.writeln(i);
-        if (i == 45) {
-        break;
-        }
-        }
-        let floors = 17;
-        for (let i = 1; i <= floors; i++) {
-        if (i == 13) {
+        
+        // let counter = 0;
+        // // alert(counter);
+        // function returnCount() {
+        // return counter;
+        // }
+        // alert(returnCount());
+        // for (let i = 0; i < 10; i++) {
+        // saySomething();
+        // }
+        // function saySomething() {
+        // document.writeln("hello!");
+        // }
+        // for (let i = 0; i < 100; i++) {
+        // document.writeln(i);
+        // if (i == 45) {
+        // break;
+        // }
+        // }
+        // let floors = 17;
+        // for (let i = 1; i <= floors; i++) {
+        // if (i == 13) {
         // нет такого этажа (floor)
-        continue;
-        }
-        document.writeln("At floor: " + i + "<br>");
-        }
+        // continue;
+        // }
+        // document.writeln("At floor: " + i + "<br>");
+        // }
         // const siteURL = "https://www.google.com";
         // alert(siteURL);
+        function stopWatch() {
+            var startTime = Date.now();
+            function getDelay() {
+                var elapsedTime = Date.now() — startTime;
+                alert(elapsedTime);
+                }
+            return getDelay;
+        }
+        let timer = stopWatch();
+            // Сделать что-нибудь за некоторое время.
+            for (let i = 0; i < 1000000; i++) {
+                let foo = Math.random() * 10000;
+            }
+            // Вызвать возвращаемую функцию.
+        timer();
     </script>
     <script src="./src/script/script.js"></script>
 </body>
