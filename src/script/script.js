@@ -1,18 +1,18 @@
-function stopWatch() {
-        var startTime = Date.now();
-        function getDelay() {
-        var elapsedTime = Date.now() — startTime;
-        alert(elapsedTime);
-        }
-        return getDelay;
-    }
-    let timer = stopWatch();
-    // Сделать что-нибудь за некоторое время.
-    for (let i = 0; i < 1000000; i++) {
-    let foo = Math.random() * 10000;
-    }
-    // Вызвать возвращаемую функцию.
-    timer();
+// function stopWatch() {
+//         var startTime = Date.now();
+//         function getDelay() {
+//         var elapsedTime = Date.now() — startTime;
+//         alert(elapsedTime);
+//         }
+//         return getDelay;
+//     }
+//     let timer = stopWatch();
+//     // Сделать что-нибудь за некоторое время.
+//     for (let i = 0; i < 1000000; i++) {
+//     let foo = Math.random() * 10000;
+//     }
+//     // Вызвать возвращаемую функцию.
+//     timer();
 // function youSayGoodBye() { debugger
 //     alert("Good Bye!");debugger
 //     function andISayHello() {debugger
@@ -60,3 +60,37 @@ function stopWatch() {
 //     console.log('hello');
 //     id = setTimeout(log, 500)
 // }, 500);
+// Урок 9
+// области видимости
+// let safeToProceed = false;
+//  function isItSafe () {
+//     if(safeToProceed){
+//         alert('You shall pass!')
+//     } else {
+//         alert('You shall not pass!')
+//     }
+//  }
+//  isItSafe();
+// function isThePriceRight(cost) {
+//     let total = cost + 1;
+//     if(total > 3) {
+//         alert(total);
+//     } else {
+//         alert('Not Enough!')
+//     }
+// }
+// isThePriceRight(4);
+
+// alert(foo); // undefined, так так сначала инициализируется var
+// var foo = "Hello!";
+
+// Глава 9 Замыкание
+function youSayGoodBye () {
+    alert('good bye!');
+    function andISayHello () {
+        alert('hello!');
+    }
+    return andISayHello;
+}
+let something = youSayGoodBye();
+something();
